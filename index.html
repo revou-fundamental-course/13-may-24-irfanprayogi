@@ -1,0 +1,108 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/script.js"></script>
+    <title>Website Simple Triangle Calculator</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>
+            Simple Triangle Calculator
+        </h1>
+        <p class="description">Simple Triangle Calculator adalah website untuk perhitungan geometri segitiga. Dengan memasukkan nilai-nilai seperti alas, tinggi, dan sisi-sisi segitiga, pengguna dapat menghitung luas dan keliling dengan cepat dan akurat.</p>
+    </header>
+
+    <main>
+        
+        <section class="luas-segitiga">
+            <h2 class="judul-luassegitiga"">
+                Luas Segitiga
+            </h2>
+            <img src="asset/luas_segitiga.png" alt="luas_segitiga">
+            <p1>
+                Rumus Luas Segitiga Yaitu :
+            </p1>
+            <img src="asset/rumus_luas_segitiga.png" alt="rumus_luas_segitiga" id="gambar-rumus">
+            <p2>
+                Dimana :<br/>
+                L = Luas<br/>
+                A = Panjang Alas<br/>
+                t = Tinggi<br/>
+            </p2>
+            <div class="hitung">
+                <h2 id="hasil-LuasSegitiga">
+                    Hitung Luas Segitiga
+                </h2>
+                <form>
+                    <section>
+                        <div class="alas">
+                            <input type="number" id="alas" placeholder="Masukan Nilai A">
+                        </div>
+                        <div class="tinggi">
+                            <input type="number" id="tinggi" placeholder="Masukan Nilai t">
+                        </div>
+                    </section>
+                    <input type="button" onclick="luas()" value="Hitung" id="ButtonHitung" />
+                    <input type="button" onclick="ResetLuas()" value="Reset" id="ButtonReset">
+                </form>
+                <div id="hasil_luas">
+                    <p>Hasil Luas: <span id="luas"></span></p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="keliling-segitiga">
+            <h2 class="judul-kelilingsegitiga">
+                Keliling Segitiga
+            </h2>
+            <img src="asset/keliling_segitiga.png" alt="keliling_segitiga">
+            <p1>
+                Rumus Keliling Segitiga Yaitu :
+            </p1>
+            <img src="asset/rumus_keliling_segitiga.png" alt="rumus_keliling_segitiga" id="gambar-rumus">
+            <p2>
+                Dimana :<br/>
+                K = Keliling<br/>
+                A = Sisi A<br/>
+                B = Sisi B<br/>
+                C = Sisi C<br/>
+            </p2>
+            <div class="hitung">
+                <h2 id="hasil-kelilingsegitiga">
+                    Hitung Keliling Segitiga
+                </h2>
+                <form>
+                    <section>
+                        <div class="A">
+                            <input type="number" id="A" placeholder="Masukan Nilai A">
+                        </div>
+                        <div class="B">
+                            <input type="number" id="B" placeholder="Masukan Nilai B">
+                        </div>
+                        <div class="C">
+                            <input type="number" id="C" placeholder="Masukan Nilai C">
+                        </div>
+                    </section>
+                    <input type="button" onclick="keliling()" value="Hitung" id="ButtonHitung">
+                    <input type="button" onclick="ResetKeliling()" value="Reset" id="ButtonReset">
+                </form>
+                <div id="hasil_Keliling">
+                    <p>Hasil Keliling: <span id="keliling"></span></p>
+                </div>
+            </div>
+        </section> 
+
+    </main>
+    <footer class="footer">
+        <h1>
+            @2024 | Created by Irfan Prayogi
+        </h1>
+    </footer>
+</body>
+
+</html>
